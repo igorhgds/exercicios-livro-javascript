@@ -1,11 +1,20 @@
-<!--Conversão da entrada para número-->
+<!--Elaborar um programa que leia o valor de um jantar. Calcule e informe o valor da taxa do garçon(10%) e o valor total a ser pago-->
+<!--
+jantar = 80,00
+taxa garçon = 10% - 8,00
+total = 88,00
+-->
 <meta charset="UTF-8">
 
 <script>
-    //le dado de entrada
-    var num = Number(prompt("Número:"));
-    //calcula dobro
-    var dobro = num + num;
-    //exibe resposta
-    alert("O dobro do número " + num + " é " + dobro);
+    // le o valor do jantar
+    const jantar = Number(prompt("Valor do jantar R$:"));
+    // calcula dados
+    const garcon = jantar * 0.10;
+    const total = jantar + garcon;
+    // var total = jantar * 1.10;
+
+    // apresenta as respostas
+    alert("Taxa Garçom R$: " + garcon.toFixed(2) + "\nTotal R$: " + total.toFixed(2));
+
 </script>
