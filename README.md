@@ -6,12 +6,12 @@
 ## Capítulo 01
 
 Exemplos | Exercícios
-[ex1_1.html] | [resp1_a.html]
-[ex1_2.html] |
-[ex1_3.html] |
-[ex1_3b.html] |
-[ex1_4.html] |
-[ex1_5.html] |
-[ex1_6.html] |
-[ex1_7.html] |
-[ex1_8.html] |
+[1](ex1_1.html) | [resp1.a](resp1_a.html)
+[2](ex1_2.html) |
+[3](ex1_3.html) |
+[3b](ex1_3b.html) |
+[4](ex1_4.html) |
+[5](ex1_5.html) |
+[6](ex1_6.html) |
+[7](ex1_7.html) |
+[8](ex1_8.html) |
