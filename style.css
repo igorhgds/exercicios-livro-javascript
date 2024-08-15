@@ -56,6 +56,10 @@ section.capitulo01, section.capitulo02{
     text-align: center;
 }
 
+.item a{
+    text-decoration: none;
+    color: black;
+}
 article h3{
     text-align: center;
     margin-bottom: 10px;
