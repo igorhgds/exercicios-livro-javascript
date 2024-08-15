@@ -1,5 +1,9 @@
 <meta charset="utf-8">
-
+<!--Elaborar um programa que leia um número. Calcule e informe os seus vizinhos, ou seja, o número anterior e posterior. Exemplo: número: 15|vizinhos: 14 e 16. -->
 <Script>
-    
+    const num = Number(prompt("Diga um número: "));
+    const numAnterior = num - 1;
+    const numPosterior = num + 1;
+
+    alert(`O número escolhido: ${num}. Tem como seu anterior: ${numAnterior}. E seu posterior: ${numPosterior}.`)
 </Script>
