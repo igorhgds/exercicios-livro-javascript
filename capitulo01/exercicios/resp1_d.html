@@ -1,0 +1,25 @@
+<meta charset="utf-8">
+<!--Elaborar um programa que leia 2 notas de um aluno em uma diciplina. Calcule e informe a média das notas
+Exemplo:
+1º nota: 7.0
+2º nota: 8.0
+média: 7.5
+-->
+<script>
+    const nota1 = parseFloat(prompt("Digite a 1º nota:"));
+    const nota2 = parseFloat(prompt("Digite a 2º nota:"));
+    const media = (nota1 + nota2) / 2;
+
+    alert(`1º nota: ${nota1}
+    2º nota: ${nota2}
+    média: ${media}`);
+
+    if (media >= 6){
+        alert("aprovado")
+    } else{
+        alert("Reprovado");
+    }
+</script>
+
+
+<a href="../../index.html">Voltar</a>
