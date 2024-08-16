@@ -14,8 +14,7 @@ body{
     background-color: black;
 }
 
-header{
-    background-color: lightgray;
+header{;
     height: 130px;
     font-size: .8em;
     padding: 30px 20px;
@@ -23,6 +22,7 @@ header{
 
 header h1{
     text-align: center;
+    color: white;
 }
 
 main{
@@ -38,7 +38,7 @@ main h2{
     margin: 10px;
 }
 
-section.capitulo01, section.capitulo02{
+section.capitulos{
     background-color: white;
     border-radius: 25px;
     margin-top: 30px;
@@ -63,4 +63,24 @@ section.capitulo01, section.capitulo02{
 article h3{
     text-align: center;
     margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    main{
+        width: 640px;
+    }
+    
+    section.capitulos{
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 992px){
+    main{
+        width: 800px;
+    }
+
+    section.capitulos{
+        justify-content: space-around;
+    }
 }
