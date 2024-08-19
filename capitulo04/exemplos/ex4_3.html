@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condição com Switch... Case</title>
+    <link rel="shortcut icon" href="img/ex4_2_favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <h1>Condição com Switch... Case</h1>
+    
+    <script>
+        const bairro = prompt("Bairro de Entrega: ")
+        let taxaEntrega
+        switch (bairro) {
+            case "Centro": 
+                taxaEntrega = 5.00
+            break
+            case "Fragata":
+            case "Três Vendas":
+                taxaEntrega = 7.00
+            break
+            case "Laranjal":
+                taxaEntrega = 10.00
+            break
+            default:
+                taxaEntrega = 8.00
+        }
+
+        alert(`Taxa R$: ${taxaEntrega.toFixed(2)}`)
+    </script>
+
+    <br>
+    <a href="../../index.html">Voltar</a>
+</body>
+</html>

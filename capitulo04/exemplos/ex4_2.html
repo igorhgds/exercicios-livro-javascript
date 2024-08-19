@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 4.2</title>
+    <link rel="stylesheet" href="../exemplos/css/estilos.css">
+    <link rel="shortcut icon" href="img/ex4_2_favicon.png" type="image/x-icon">
+</head>
+<body>
+    <img src="img/ex4_2.png" alt="Balança">
+    <h1>Programa Cálculo do Peso Ideal</h1>
+
+    <form>
+        <p>Nome: 
+            <input type="text" name="nome" id="inNome" required>
+        </p>
+        <p>Sexo: 
+            <input type="radio" name="sexo" id="inMasculino" required> Masculino
+            <input type="radio" name="sexo" id="inFeminino" required> Feminino
+        </p>
+        <p>Altura:
+            <input type="number" name="altura" id="inAltura" step="0.01" min="0" required>
+        </p>
+        <p>
+            <input type="submit" value="Calcular Peso Ideal">
+            <input type="reset" value="Limpar Campos">
+        </p>
+    </form>
+
+    <h3></h3>
+
+    <script src="js/ex4_2.js"></script>
+
+    <br>
+    <a href="../../index.html">Voltar</a>
+</body>
+</html>
