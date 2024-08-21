@@ -1,0 +1,71 @@
+<!--Elaborar um programa para simular um parquimetro, o qual leia o valor de moedas depositado em um terminal de estacionamento rotativo. O programa deve informar o tempo de permanência do veículo no local e o troco(se existir), como no exemplo. se o valor for inferior ao tempo mínimo, exiba a mensagem: "Valor insuficiente". Considerar os valores/tempos da tabela (maximo 120min)
+Valor R$    | Tempo (min)
+1.00        |   30
+1.75        |   60 
+3.00        |   120
+
+
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4.c</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <h1>Programa Parquímetro</h1>
+    <form>
+        <p>Valor R$: 
+            <input type="number" name="valor" id="inValor" step="0.01">
+        </p>
+        <input type="submit" value="Confirmar Depósito">
+    </form>
+
+    <h3></h3>
+    <h4></h4>
+
+    <script>
+        const frm = document.querySelector("form")
+        const resp1 = document.querySelector("h3")
+        const resp2 = document.querySelector("h4")
+
+        frm.addEventListener("submit", (e) => {
+            e.preventDefault()
+            const valor = Number(frm.inValor.value)
+            if (valor < 1.00){
+                alert("Valor Insuficiente!")
+                frm.inValor.focus()
+                return
+            }
+
+            if (valor >= 1 && valor < 1.75){
+                resp1.innerText = `Tempo: 30 Minutos`
+                if (valor - 1 == 0){
+                    resp2.innerText = ""
+                }else{
+                    resp2.innerText = `Troco R$: ${(valor - 1).toFixed(2)}`
+                }
+            } else if (valor >= 1.75 && valor < 3.00) {
+                resp1.innerText = `Tempo: 60 Minutos`
+                if (valor - 1.75 == 0){
+                    resp2.innerText = ""
+                }else{
+                    resp2.innerText = `Troco R$: ${(valor - 1.75).toFixed(2)}`
+                }
+            } else {
+                resp1.innerText = `Tempo: 120 Minutos`
+                if (valor - 3 == 0){
+                    resp2.innerText = ""
+                }else{
+                    resp2.innerText = `Troco R$: ${(valor - 3).toFixed(2)}`
+                }
+            }
+        })
+    </script>
+
+    <br>
+    <a href="../../index.html">Voltar</a>
+</body>
+</html>
