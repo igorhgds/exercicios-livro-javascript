@@ -1,0 +1,50 @@
+<!--Elaborar um programa que leia a velocidade permitida em uma estrada e a velocidade de um condutor. Se a velocidade for inferior ou igual a permitida, exiba "Sem multa". Se a velocidade for de até 20% maior que a permitida, exiba "Multa Leve", se a velocidade for maior que 20%, exiba "Multa grave"-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4.b</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <h1>Programa Verifica Velocidade</h1>
+    <form>
+        <p>Velocidade Permitida: 
+            <input type="number" name="velPermitida" id="inVelPermitida">
+        </p>
+        <p>Velocidade do Condutor: 
+            <input type="number" name="velCondutor" id="inVelCondutor">
+        </p>
+        <input type="submit" value="Vericar Multa">
+    </form>
+
+    <h3></h3>
+
+    <script>
+        const frm = document.querySelector("form")
+        const resp = document.querySelector("h3")
+
+        frm.addEventListener("submit", (e) => {
+            e.preventDefault()
+
+            const velPermitida = Number(frm.inVelPermitida.value)
+            const velCondutor = Number(frm.inVelCondutor.value)
+
+
+
+            if (velCondutor <= velPermitida){
+                resp.innerText = `Sem Multa!`
+            } else if (velCondutor/velPermitida <= 1.2 ){
+                resp.innerText = `Multa Leve!`
+            } else {
+                resp.innerText = `Multa Grave!`
+            }
+        })
+    </script>
+
+    <br>
+    <a href="../../index.html">Voltar</a>
+</body>
+</html>
